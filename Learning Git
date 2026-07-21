@@ -1,0 +1,73 @@
+Difference b/n git clone and git fork.
+-Clone-Make a local copy of a repository.
+-Fork-Create your own server-side copy of someone else's repository, then clone your fork locally.
+
+When would you use Fork instead of Clone?
+
+I use a fork when I need my own copy of a repository, especially when contributing to open-source projects where I don't have write access. After forking, I clone my fork locally, make changes, and create a pull request back to the original repository.
+
+Ex:1. Contributing to an Open-Source Project
+
+Scenario 1: You want to fix a bug in Kubernetes, React, or VS Code.
+
+✅ Use Fork
+
+Original Repo (Microsoft/vscode)
+        |
+       Fork
+        |
+Your Repo (Suma/vscode)
+        |
+      Clone
+        |
+   Local Machine
+
+Why?
+
+You don't have write access to Microsoft's repo.
+Fork creates your own repository on GitHub.
+You make changes and raise a Pull Request (PR).
+
+2.Contributing to someone else's repository
+
+You don't have write permission
+Maintaining your own customized version of an open-source project
+
+When would you use Clone instead of Fork?
+
+I use clone when I already have access to the repository or only need a local copy for development, deployment, learning, or backup purposes. Most internal company projects use clone rather than fork.
+
+Ex 1.Working on Your Company's Repository
+
+Scenario: You are a Desktop Engineering team member and have access to the company's Git repository.
+
+✅ Use Clone
+
+git clone https://github.com/company/intune-scripts.git
+Show more lines
+
+Why?
+
+You already have write permissions.
+No need for a separate repository.
+
+Ex 2.Downloading Source Code for Learning
+
+Scenario: You want to study the Linux source code.
+
+✅ Use Clone
+
+Reason:
+
+You're only reading the code.
+No intention to contribute.
+
+Ex 3.Joining an Existing Internal Project
+
+Scenario: Another engineer asks you to work on a project.
+
+✅ Use Clone
+
+Reason:
+
+Team members collaborate directly on the same repository.
